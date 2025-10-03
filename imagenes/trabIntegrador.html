@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gabriela Ballerini</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .recuadri {
+            background-color: rgba(128, 128, 128, 0.13);
+            width: 550px;
+            padding: 20px;
+
+        }
+
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+
+        h2 {
+
+            align-self: flex-end;
+            font-size: 30px;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            border: 3px solid black;
+            width: 500px;
+            gap: 20px;
+            border-radius: 10px;
+            padding: 20px;
+
+
+        }
+
+
+        .item {
+
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+
+        label {
+
+            font-size: 22px;
+
+
+
+        }
+
+        input {
+
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 3px solid black;
+
+        }
+
+
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-family: monospace;
+            padding-bottom: 10px;
+
+        }
+
+        button {
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            padding: 10px 30px;
+            font-family: monospace;
+
+
+        }
+
+
+        .boton {
+            display: flex;
+            justify-content: center;
+
+
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <div class="recuadri">
+
+        <h1>Plataforma de usuarios</h1>
+
+        <form action="">
+
+            <h2>Mis datos.</h2>
+
+
+            <div class="item">
+
+                <label for="nombre">*Nombre de usuario: </label>
+
+                <input type="text" id="nombre" name="nombre" minlength="10" maxlength="20" required>
+
+            </div>
+
+
+            <div class="item">
+
+                <label for="nacimiento">Fecha de cumpleaños: </label>
+                <input type="date" name="nacimiento" id="nacimiento" max="2025-09-29" min="1900-09-29">
+            </div>
+
+            <div class="item">
+                <label for="email">*Correo electrónico: </label>
+                <input type="email" name="email" id="email" required>
+
+
+            </div>
+
+            <div class="item">
+                <label for="Contraseña">*Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" required minlength="9">
+
+            </div>
+
+
+            <div class="item">
+                <label for="Contraseña2">*Confirmar contraseña:</label>
+                <input type="password" name="contraseña2" id="contraseña2" required minlength="9">
+
+            </div>
+
+
+            <div>
+
+                <input type="checkbox" id="check" name="check" required>
+                <label for="check">*Acepto términos y condiciones</label>
+
+            </div>
+
+
+            <div class="boton">
+                <button type="submit">Registrarse</button>
+
+            </div>
+
+
+
+
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</html>
