@@ -46,6 +46,17 @@ h1::before {
     }
 
 
+    
+    .costa10 {
+      float: left;
+      margin: 10px;
+    
+      width: 30%;
+     height: 30%;
+     border-radius: 10px;
+    }
+
+
 
 
     .mision{
@@ -68,6 +79,9 @@ h1::before {
 height: 50px;
 
 }
+
+
+
 
 
     
