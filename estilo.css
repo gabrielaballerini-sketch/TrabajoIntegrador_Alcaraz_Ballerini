@@ -1,87 +1,91 @@
+* {
 
-
-*{
-
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: 16px;
-
-}
-
-.Historia{
-
-    font-size:16px ;
-    display: flex;
-   
-    justify-content: start;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: rgb(88, 170, 148);
+  color: white;
+  font-style: italic;
 
 }
 
-
-/* ver------ */
-div p {
-text-align: justify;
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 
 }
 
-h1::before {
-      content: "👉✨ ";
-      color: green;
-    }
+.historia1 {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
 
-    h1::after {
-      content: " ✔ 👀 🧟‍♀️";
-      color: blue;
+}
 
-    }
+.histTxt h2 {
+  text-align: left;
+  text-decoration: underline double;
+}
 
-    
+.histImg {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 85%;
+  border-radius: 20px;
+  justify-content: right;
+  align-items: normal;
+  border: solid 2px white;
+  overflow: hidden;
+}
 
-    .imagen1 {
-      float: left;
-      margin: 10px;
-    
-      width: 30%;
-     height: 30%;
-     border-radius: 10px;
-    }
-
-
-    
-    .costa10 {
-      float: left;
-      margin: 10px;
-    
-      width: 30%;
-     height: 30%;
-     border-radius: 10px;
-    }
-
+.histTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
 
+.mision {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+}
 
-    .mision{
-    clear: both;
-    }
+.misionTxt {
+  flex: 1;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+}
 
-    .imagen2{
-     float: right;
-      margin: 10px;
-    
-      width: 30%;
-     height: 30%;
-      border-radius: 10px;
-    }
+.misionTxt h2 {
+  text-decoration: underline double;
+}
+
+.imgMision {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 40%;
+  border-radius: 20px;
+  justify-content: right;
+  align-items: normal;
+  border: solid 2px white;
+  overflow: hidden;
+}
 
 #navbar {
   position: sticky;
   top: 0;
-    background-color: #64f293;
-height: 50px;
+  background-color: #468875;
+  height: 50px;
 
 }
-
-
-
-
-
-    
