@@ -1,15 +1,15 @@
 * {
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  background-color: rgb(88, 170, 148);
+  font-size: 20px;
+  background-color: rgb(136, 191, 136);
   color: white;
   font-style: italic;
 
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   color: white;
   text-align: center;
@@ -34,8 +34,8 @@ h1 {
 .histImg {
   display: flex;
   flex-direction: column;
-  width: 25%;
-  height: 25%;
+  width: 35%;
+  height: 35%;
   border-radius: 20px;
   justify-content: center;
   align-items: normal;
@@ -76,8 +76,8 @@ h1 {
 .imgMision {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  height: 40%;
+  width: 55%;
+  height: 55%;
   border-radius: 20px;
   justify-content: right;
   align-items: normal;
@@ -86,9 +86,66 @@ h1 {
 }
 
 #navbar {
+  padding: 10 px;
   position: sticky;
   top: 0;
-  background-color: #468875;
   height: 50px;
 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #468875;
+}
+
+li {
+  float: left;
+  background-color: #468875;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #468875;
+}
+
+li.dropdown {
+  display: inline-block;
+  background-color: #468875;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #468875;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #468875;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

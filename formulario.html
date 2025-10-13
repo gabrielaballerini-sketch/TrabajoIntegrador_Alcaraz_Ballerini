@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Alcaraz - Ballerini</title>
+
+
+    <style>
+        #contenedorForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 10px;
+            height: 400px;
+            width: 240px;
+            border: 2px solid rgb(136, 191, 136);
+            border-radius: 20px;
+            box-shadow: 10px 15px rgb(136, 191, 136);
+        }
+
+        form label {
+            display: block;
+        }
+
+        input,
+        textarea {
+            border: none;
+            border-bottom: 1px solid blue;
+            outline: none;
+        }
+
+        .botones {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+    <div id="contenedorForm">
+        <form action="" method="get">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido">
+            </div>
+            <div>
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" placeholder="tucorreo@ejemplo.com">
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" rows="5" placeholder="Dejanos tu consulta"></textarea>
+            </div>
+            <div>
+                <button>Enviar</button>
+                <button>Salir</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
