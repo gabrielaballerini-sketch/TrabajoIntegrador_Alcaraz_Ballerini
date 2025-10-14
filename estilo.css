@@ -86,12 +86,10 @@ h1 {
 }
 
 #navbar {
- 
   padding: 10 px;
   position: sticky;
   top: 0;
   height: 50px;
-
 }
 
 ul {
@@ -108,7 +106,7 @@ li {
 }
 
 li a,
-.dropbtn {
+.despBtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -117,16 +115,16 @@ li a,
 }
 
 li a:hover,
-.dropdown:hover .dropbtn {
+.desplegable:hover .despBtn {
   background-color: #468875;
 }
 
-li.dropdown {
+li.desplegable {
   display: inline-block;
   background-color: #468875;
 }
 
-.dropdown-content {
+.despContenido {
   display: none;
   position: absolute;
   background-color: #468875;
@@ -135,7 +133,7 @@ li.dropdown {
   z-index: 1;
 }
 
-.dropdown-content a {
+.despContenido a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
@@ -143,149 +141,85 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {
+.despContenido a:hover {
   background-color: #73bfa9;
 }
 
-.dropdown:hover .dropdown-content {
+.desplegable:hover .despContenido {
   display: block;
 }
 
-li a{
-
+li a {
   background-color: #468875;
-
 }
 
+h1 {
 
-
-
- #contenedorForm {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0px;
-            height: 700px;
-            width:500px;
-            border: 2px solid rgb(30, 63, 1);
-            border-radius: 20px;
-            box-shadow: 10px 15px rgb(2, 72, 2);
-            padding: 5px;
-             max-width: 90%;
-            align-items: stretch; 
-            padding: 30px 40px;
-
-        }
-
-        .item{ 
-
-
-          display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 10px;
-                  
-
-          
-        }
-
-        form label {
-            display: block;
-            
-        }
-
-        input,
-        textarea {
-            border: none;
-            border-bottom: 1px solid blue;
-           
-        }
-
-        .botones {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        button {
-            color: white;
-            background-color: black;
-            border-radius: 20px;
-            padding: 10px;
-            gap: 20px;
-            justify-content: space-between;
-        }
-
-
-
-h1{
- 
-    text-align: center;
+  text-align: center;
 
 
 }
 
-.barilo_texto{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-   text-align: justify;
-     padding: 30 px;  
-     
-     /*agregue*/
-     font-size: 25px;
+.barilo_texto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 30 px;
+
+  /*agregue*/
+  font-size: 25px;
 
 }
 
 
-.imagenes_barilo{
-    
- display: flex;
- flex-wrap: wrap; 
+.imagenes_barilo {
+
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   text-align: center;
-    
-
-flex-direction: row;
-justify-content: center;
-align-items: center;
-
-}
-
-.contenedor_barilo{
-
-width: 90%;
-margin: 0 ;
 
 
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
 }
 
+.contenedor_barilo {
 
-.barilo{
-width: 30%;
-display: inline-block;
-vertical-align: top;
-text-align: center;
+  width: 90%;
+  margin: 0;
 
-}
 
-.barilo img{
-
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
 
-.costa10{
+.barilo {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+
+}
+
+.barilo img {
+
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+}
+
+
+.costa10 {
 
   display: flex;
   flex-direction: column;
@@ -298,7 +232,3 @@ text-align: center;
   overflow: hidden;
 
 }
-
-
-
-       

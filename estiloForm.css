@@ -1,0 +1,129 @@
+* {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: rgb(136, 191, 136);
+    color: white;
+    font-style: italic;
+
+}
+
+#navbar {
+    padding: 10 px;
+    position: sticky;
+    top: 0;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #468875;
+}
+
+li {
+    float: left;
+    background-color: #468875;
+}
+
+li a,
+.despBtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.desplegable:hover .despBtn {
+    background-color: #468875;
+}
+
+li.desplegable {
+    display: inline-block;
+    background-color: #468875;
+}
+
+.despContenido {
+    display: none;
+    position: absolute;
+    background-color: #468875;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.despContenido a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.despContenido a:hover {
+    background-color: #73bfa9;
+}
+
+.desplegable:hover .despContenido {
+    display: block;
+}
+
+li a {
+    background-color: #468875;
+}
+
+#contenedorForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 600px;
+    width: 500px;
+    border: 2px solid rgb(30, 63, 1);
+    border-radius: 20px;
+    box-shadow: 10px 15px rgb(2, 72, 2);
+    padding: 5px;
+    max-width: 90%;
+    align-items: stretch;
+
+
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+form label {
+    display: block;
+
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid rgb(5, 54, 5);
+
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+}

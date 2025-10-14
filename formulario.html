@@ -3,44 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <title>Alcaraz - Ballerini</title>
-
-
-
-
-   
- <link rel="stylesheet" href="estilo.css">
-
-     
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estiloForm.css">
 </head>
 
 <body>
-
-
-
- <div id="navbar">
+    <div id="navbar">
         <ul>
-            <li style="background-color: #468875 ;"><a href="index.html">Nosotros</a></li>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Experiencias</a>
-                <div class="dropdown-content">
-                    <a href="Bariloche.html" >Bariloche</a>
+            <li><a href="carrusel.html">Inicio</a></li>
+            <li><a href="index.html">Nosotros</a></li>
+            <li class="desplegable">
+                <a href="javascript:void(0)" class="despbtn">Experiencias</a>
+                <div class="despContenido">
+                    <a href="Bariloche.html">Bariloche</a>
                     <a href="Costa.html">Costa Atlantica</a>
                     <a href="cruceAndes.html">Cruce de los Andes</a>
                     <a href="escaladaMendoza.html">Escalada en Mendoza</a>
                     <a href="lasLenas.html">Las Leñas</a>
                 </div>
-                </li>
+            </li>
             <li><a href="formulario.html">Contacto</a></li>
         </ul>
-           </div>
 
-
-
-
-
-
+    </div>
 
     <div id="contenedorForm">
         <form action="" method="get">
@@ -48,15 +33,15 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre">
             </div>
-          <div class="item">
+            <div class="item">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido">
             </div>
-              <div class="item">
+            <div class="item">
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" placeholder="tucorreo@ejemplo.com">
             </div>
-              <div class="item">
+            <div class="item">
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" rows="5" placeholder="Dejanos tu consulta"></textarea>
             </div>
