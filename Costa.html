@@ -8,6 +8,38 @@
 
     <link rel="stylesheet" href="estilo.css">
 
+
+<style>
+    /* Los contenidos empiezan ocultos */
+    .contenido {
+      display: none;
+      padding: 8px;
+    }
+    button.titulo {
+      cursor: pointer;
+      padding: 6px 10px;
+    }
+
+button.titulo {
+  width: 220px;              
+  background-color: #157c18; 
+  border: 2px solid #4CAF50; 
+  border-radius: 6px;        
+  padding: 10px;
+  margin: 6px auto;        
+  font-size: 16px;
+  font-style: italic;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+
+
+  </style>
+
+
 </head>
 
 <body>
@@ -75,12 +107,98 @@
 
 
 
-    <div>
-
-        PONER LOCALIDADES
 
 
-    </div>
+
+
+
+
+<table border="1">
+  <tr>
+    <td>
+      <!-- aquí le paso el id del div que quiero alternar -->
+      <button type="button" class="titulo" onclick="mostrarOcultar('contenido1')">San Clemente del Tuyú</button>
+      <div id="contenido1" class="contenido">
+        <p>Siendo la primera playa le da la bienvenida a todos aquellos que ingresan desde el Norte al Partido de La Costa. El entorno natural único e inolvidable es el marco perfecto para disfrutar la unión de Mar Argentino con el Río de la Plata; el avistaje de aves migratorias como máxima expresión de su biodiversidad tan amplia.
+
+Esta localidad permite disfrutar sus atractivos naturales como la Reserva Natural Punta Rasa, Tapera de López; visitar el puerto de estilo artesanal; recorrer uno de los oceanarios más importantes de América Latina, Mundo Marino; o tal vez entregarse al encanto y la relajación de Termas Marinas.</p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button type="button" class="titulo" onclick="mostrarOcultar('contenido2')">Las Toninas</button>
+      <div id="contenido2" class="contenido">
+        <p>Las Toninas es ideal para el descanso y el esparcimiento natural, grandes playas con vegetación y médanos prácticamente vírgenes. Un poblado de artesanos y paseos para disfrutar en familia, como el Parque Temático y Religioso Laberinto Las Toninas, para recorrerlo de día o de noche y aventurarse en sus pasajes naturales.</p>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <button type="button" class="titulo" onclick="mostrarOcultar('contenido3')">Santa Teresita</button>
+      <div id="contenido3" class="contenido">
+        <p> Una localidad que invita a una variedad enorme de entretenimientos; el esparcimiento y la relajación se garantizan. Cuenta con una cancha de golf de nueve hoyos, un club hípico con clases de equitación y un Aeródromo. Su amplio centro comercial se conjuga con la zona de bosque.
+
+Se caracteriza por sus paseos pintorescos, como puede ser una caminata por su extensa pasarela de madera junto al mar para desembocar en la replica de la Carabela Santa María; o una agradable velada en el Paseo comercial, Camino del Jagüel, donde la naturaleza y el confort se viven. Acompaña su encanto, el muelle de pesca de la localidad.</p>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <button  type="button" class="titulo" onclick="mostrarOcultar('contenido4')">Aguas Verdes</button>
+      <div id="contenido4" class="contenido">
+        <p>Una localidad donde la tranquilidad es el eje, ideal para aquellos que buscan un espacio agreste e íntimo para disfrutar solos o acompañados. Su belleza natural invita a las caminatas, paseos en bicicleta, tardes de lectura y disfrute en sus amplias playas y a cualquier actividad en contacto con lo natural.</p>
+      </div>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td>
+      <button  type="button" class="titulo" onclick="mostrarOcultar('contenido5')">San Bernardo</button>
+      <div id="contenido5" class="contenido">
+        <p>Sin dudas una localidad que recibe público de todas las edades; por sus variados espectáculos y vida nocturna, su amplia oferta gastronómica de primer nivel y su plaza comercial heterogénea y accesible. San Bernardo es la sede de la fiesta que da inicio a la temporada estival: la Fiesta Nacional del Sol y la Familia, que se realiza en la plaza principal del balneario..</p>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+</table>
+
+
+
+
+<script>
+  
+function mostrarOcultar(id) {
+  const contenido = document.getElementById(id);
+
+  if (contenido.style.display === "block") {
+    contenido.style.display = "none";
+  } else {
+    contenido.style.display = "block";
+    // 👇 hace scroll suave hasta el texto recién abierto
+    contenido.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+  
+
+
+
+
+
+
+
+  
+</script>
 
 
 
