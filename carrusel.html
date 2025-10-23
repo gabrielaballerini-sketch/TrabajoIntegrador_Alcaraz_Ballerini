@@ -13,21 +13,22 @@
       box-sizing: border-box
     }
 
-    /* Slideshow container */
-    .slideshow-container {
+  
+    .Carrusel {
       max-width: 1000px;
       position: relative;
       margin: auto;
-      padding: 10px;
+      padding-top:  20px;
     }
 
-    /* Hide the images by default */
-    .mySlides {
+   
+    .diapositiva {
       display: none;
+       padding-top: 30px;
     }
 
-    /* Next & previous buttons */
-    .prev,
+    /* anterior & next botones */
+    .anterior,
     .next {
       cursor: pointer;
       position: absolute;
@@ -42,19 +43,20 @@
 
     }
 
-    /* Position the "next button" to the right */
+    /* posiciona el boton next a la derecha */
     .next {
       right: 0;
       border-radius: 3px 0 0 3px;
     }
 
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
+    /* cambia color anterior next, en hover  */
+    .anterior:hover,
     .next:hover {
-      background-color: rgba(0, 0, 0, 0.8);
+  background-color: #194f40;
+      
     }
 
-    /* Caption text */
+    /* texto abajo de las fotos */
     .text {
       color: #050505;
       text-shadow:
@@ -73,8 +75,8 @@
 
 
 
-    /* The dots/bullets/indicators */
-    .dot {
+    
+    .punto {
       cursor: pointer;
       border-radius: 50%;
       height: 8px;
@@ -85,26 +87,12 @@
 
     }
 
-    .active,
-    .dot:hover {
+    .seleccionado,
+    .punto:hover {
       background-color: #717171;
     }
 
-    /* Fading animation */
-    .fade {
-      animation-name: fade;
-      animation-duration: 2.5s;
-    }
-
-    @keyframes fade {
-      from {
-        opacity: .4
-      }
-
-      to {
-        opacity: 1
-      }
-    }
+   
   </style>
 
 </head>
@@ -129,29 +117,29 @@
     </ul>
 
   </div>
-  <!-- Slideshow container -->
-  <div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
+  <div class="Carrusel">
+
+   
+    <div class="diapositiva ">
 
       <img src="Fotos_integrador/bariloInicio.jpg" style="width:100%">
       <div class="text">Bariloche </div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="diapositiva ">
 
       <img src="Fotos_integrador/catamarca.jpeg" style="width:100%">
       <div class="text">Cruce de los Andes</div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="diapositiva ">
 
       <img src="Fotos_integrador/dique_potrerillos.jpg" style="width:100%">
       <div class="text">Dique Potrerillos</div>
     </div>
 
-    <div class="mySlides fade">
+    <div class="diapositiva">
 
       <img src="Fotos_integrador/lasLeñas.webp" style="width:100%">
       <div class="text">Las Leñas</div>
@@ -159,49 +147,49 @@
 
 
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   
+    <a class="anterior" onclick="avanzar(-1)">&#10094;</a>
+    <a class="next" onclick="avanzar(1)">&#10095;</a>
   </div>
   <br>
 
-  <!-- The dots/circles -->
+  
   <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="punto" onclick="imagenActual(1)"></span>
+    <span class="punto" onclick="imagenActual(2)"></span>
+    <span class="punto" onclick="imagenActual(3)"></span>
+    <span class="punto" onclick="imagenActual(4)"></span>
   </div>
 
   <script>
 
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    let index = 1;
+    mostrarDiapositivas(index);
 
     // Next/previous controls
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
+    function avanzar(n) {
+      mostrarDiapositivas(index += n);
     }
 
     // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
+    function imagenActual(n) {
+      mostrarDiapositivas(index = n);
     }
 
-    function showSlides(n) {
+    function mostrarDiapositivas(n) {
       let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+      let diapositivas = document.getElementsByClassName("diapositiva");
+      let puntos = document.getElementsByClassName("punto");
+      if (n > diapositivas.length) { index = 1 }
+      if (n < 1) { index = diapositivas.length }
+      for (i = 0; i < diapositivas.length; i++) {
+        diapositivas[i].style.display = "none";
       }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+      for (i = 0; i < puntos.length; i++) {
+        puntos[i].className = puntos[i].className.replace(" seleccionado", "");
       }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      diapositivas[index - 1].style.display = "block";
+      puntos[index - 1].className += " seleccionado";
     }
 
 

@@ -80,8 +80,7 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    margin: auto;
     height: 600px;
     width: 500px;
     border: 2px solid rgb(30, 63, 1);
@@ -90,7 +89,7 @@ li a {
     padding: 5px;
     max-width: 90%;
     align-items: stretch;
-
+    margin-top: 30px;
 
 }
 
