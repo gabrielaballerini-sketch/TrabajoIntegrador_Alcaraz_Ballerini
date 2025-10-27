@@ -231,7 +231,7 @@ h1 {
 .imgLocalidades {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
 
   border-radius: 20px;
   justify-content: center;
@@ -240,7 +240,7 @@ h1 {
 
 .imgLocalidades img {
   /* CAMBIO CLAVE: Aquí es donde reduces el tamaño de la imagen real */
-  width: 80%;
+  width: 78%;
   /* Por ejemplo, la imagen ocupará el 80% del 45% del contenedor */
   height: auto;
   /* Mantiene la proporción */

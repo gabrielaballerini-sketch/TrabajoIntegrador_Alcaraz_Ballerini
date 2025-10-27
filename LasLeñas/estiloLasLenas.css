@@ -1,0 +1,107 @@
+* {
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-color: rgb(136, 191, 136);
+    color: white;
+    font-style: italic;
+
+}
+
+div h2 {
+    text-align: center;
+}
+
+#navbar {
+    padding: 10 px;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #468875;
+}
+
+li {
+    float: left;
+    background-color: #468875;
+}
+
+li a,
+.despBtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.desplegable:hover .despBtn {
+    background-color: #468875;
+}
+
+li.desplegable {
+    display: inline-block;
+    background-color: #468875;
+}
+
+.despContenido {
+    display: none;
+    position: absolute;
+    background-color: #468875;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+}
+
+.despContenido a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.despContenido a:hover {
+    background-color: #73bfa9;
+}
+
+.desplegable:hover .despContenido {
+    display: block;
+}
+
+li a {
+    background-color: #468875;
+}
+
+h1 {
+
+    text-align: center;
+
+
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: normal;
+    border: solid 2px white;
+    overflow: hidden;
+    margin: auto;
+}
+
+#listainfo .listLenas {
+    background-color: none;
+    list-style-type: circle;
+}
