@@ -10,21 +10,32 @@
 
   <style>
     * {
-      box-sizing: border-box
+      box-sizing: border-box;
+      background-color: white;
+
     }
 
-  
+
     .Carrusel {
       max-width: 1000px;
       position: relative;
       margin: auto;
-      padding-top:  20px;
+
     }
 
-   
+
     .diapositiva {
       display: none;
-       padding-top: 30px;
+      padding-top: 30px;
+      width: 1000px;
+      height: 700px;
+      overflow: hidden;
+    }
+
+    .img-carrusel {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     /* anterior & next botones */
@@ -52,8 +63,8 @@
     /* cambia color anterior next, en hover  */
     .anterior:hover,
     .next:hover {
-  background-color: #194f40;
-      
+      background-color: #194f40;
+
     }
 
     /* texto abajo de las fotos */
@@ -68,14 +79,11 @@
       font-size: 16px;
       padding: 8px 12px;
       position: absolute;
-      bottom: 8px;
+      bottom: 5px;
       width: 100%;
       text-align: center;
     }
 
-
-
-    
     .punto {
       cursor: pointer;
       border-radius: 50%;
@@ -91,8 +99,6 @@
     .punto:hover {
       background-color: #717171;
     }
-
-   
   </style>
 
 </head>
@@ -109,8 +115,8 @@
           <a href="Bariloche.html">Bariloche</a>
           <a href="Costa.html">Costa Atlantica</a>
           <a href="cruceAndes.html">Cruce de los Andes</a>
-          <a href="escaladaMendoza.html">Escalada en Mendoza</a>
-          <a href="lasLenas.html">Las Leñas</a>
+          <a href="escaladaMendoza/escaladaMendoza.html">Escalada en Mendoza</a>
+          <a href="LasLeñas/lasLenas.html">Las Leñas</a>
         </div>
       </li>
       <li><a href="formulario.html">Contacto</a></li>
@@ -120,40 +126,40 @@
 
   <div class="Carrusel">
 
-   
+
     <div class="diapositiva ">
 
-      <img src="Fotos_integrador/bariloInicio.jpg" style="width:100%">
+      <img src="Fotos_integrador/bariloInicio.jpg" class="img-carrusel">
       <div class="text">Bariloche </div>
     </div>
 
     <div class="diapositiva ">
 
-      <img src="Fotos_integrador/catamarca.jpeg" style="width:100%">
+      <img src="Fotos_integrador/catamarca.jpeg" class="img-carrusel">
       <div class="text">Cruce de los Andes</div>
     </div>
 
     <div class="diapositiva ">
 
-      <img src="Fotos_integrador/dique_potrerillos.jpg" style="width:100%">
+      <img src="Fotos_integrador/dique_potrerillos.jpg" class="img-carrusel">
       <div class="text">Dique Potrerillos</div>
     </div>
 
     <div class="diapositiva">
 
-      <img src="Fotos_integrador/lasLeñas.webp" style="width:100%">
+      <img src="Fotos_integrador/lasLeñas.webp" class="img-carrusel">
       <div class="text">Las Leñas</div>
     </div>
 
 
 
-   
+
     <a class="anterior" onclick="avanzar(-1)">&#10094;</a>
     <a class="next" onclick="avanzar(1)">&#10095;</a>
   </div>
   <br>
 
-  
+
   <div style="text-align:center">
     <span class="punto" onclick="imagenActual(1)"></span>
     <span class="punto" onclick="imagenActual(2)"></span>
