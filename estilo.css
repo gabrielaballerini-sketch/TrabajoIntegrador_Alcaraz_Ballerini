@@ -237,7 +237,7 @@ border-radius: 12px;
 
 }
 
-.textobarilo2{
+.textobarilo2 {
 text-align: center;
 display: flex;
 justify-content: center;
@@ -263,6 +263,17 @@ font-family: Arial, sans-serif;
 }
 
 
+.textobarilo2 ul{
+
+list-style-type: disc;
+color: black;
+margin-left: 40px;
+
+}
+.textobarilo2 li{
+margin-bottom: 5px;
+
+}
 
 
 
