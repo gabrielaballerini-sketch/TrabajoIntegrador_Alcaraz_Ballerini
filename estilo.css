@@ -99,10 +99,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #468875;
+  display: flex; 
+ /*AGREGUE FLEX ACA */
 }
 
 li {
-  float: left;
+/* BORRO   float: left;*/
   background-color: #468875;
 }
 
@@ -274,7 +276,6 @@ margin-left: 40px;
 margin-bottom: 5px;
 
 }
-
 
 
 
