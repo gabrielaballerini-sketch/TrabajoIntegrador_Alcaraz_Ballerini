@@ -28,22 +28,26 @@
     </div>
 
     <div id="contenedorForm">
-        <form action="" method="get" id="formu" onsubmit="return validarForm()">
+        <form action="" novalidate method="get" name="formu" onsubmit="return validarForm()">
             <div class="item">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" novalidate>
+                <p id="error"></p>
             </div>
             <div class="item">
                 <label for="apellido">Apellido</label>
                 <input type="text" name="apellido">
+                <p id="error2"></p>
             </div>
             <div class="item">
                 <label for="correo">Correo</label>
                 <input type="email" name="correo" placeholder="tucorreo@ejemplo.com">
+                <p id="error3"></p>
             </div>
             <div class="item">
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" rows="5" placeholder="Dejanos tu consulta"></textarea>
+                <p id="error4"></p>
             </div>
             <div class="botones">
                 <button>Enviar</button>
@@ -58,43 +62,117 @@
 
     </div>
     <script>
+        
+       
+    
         function validarForm() {
+         
+            let bandera=true;
+            
 
-            const form = document.getElementById('formu')
-            const nombre = form.nombre.value.trim();
-            const apellido = form.apellido.value.trim();
-            const correo = form.correo.value.trim();
-            const mensaje = form.mensaje.value.trim();
+            const form = document.forms["formu"];
 
-            let errores = [];
+            const nombre = form["nombre"];
+            const apellido =form["apellido"];
+            const correo = form["correo"];
+            const mensaje = form["mensaje"];
+                    
+            
+          nombre.style.border="";
+          apellido.style.border="";
+          correo.style.border="";
+          mensaje.style.border="";  
+                       
+           
 
-            if (nombre == "") {
-                errores.push("El campo Nombre es obligatorio")
+            if (nombre.value === "") {
+               comprobando(nombre,"error");
+                 bandera=false;
+                 }else{
+                  let variable=document.getElementById("error").style.display='none';            
             }
-            if (apellido == "") {
-                errores.push("El campo Apellido es obligatorio")
-            }
-            if (correo == "") {
-                errores.push("El campo Correo es obligatorio")
-            } else if (!validarFormatoEmail(correo)) {
-                errores.push("El formato del correo no es valido")
-            }
-            if (mensaje == "") {
-                errores.push("El campo Mensaje es obligatorio")
-            }
-            if (errores.length > 0) {
-                alert("Por favor completa los siguientes campos" + '\n' + errores.join('\n'));
-                return false;
+             
+
+            
+         if(apellido.value===''){
+         comprobando(apellido,"error2");
+          bandera=false;
+          }else{
+        let variable=document.getElementById("error2").style.display='none';
             }
 
-            return true;
+
+             
+            let valor=document.getElementById("error3");
+
+            if (correo.value.trim() === "") {
+
+            bandera=false;
+            
+             valor.style.display="flex";
+             valor.style.color="red";
+             valor.innerHTML="Debe completar el campo"
+              correo.style.border="2px solid red";
+                
+             
+
+            } else if (!validarFormatoEmail(correo.value)) {
+               
+            
+             bandera=false;
+             valor.style.display="flex";
+             valor.style.color="red";
+             correo.style.border="2px solid red";
+             valor.innerHTML="Ingrese un formato válido, ejemplo@gmail.com"
+
+
+            }else{
+                 valor.style.display="none";
+
+            }
+
+            let mens=document.getElementById("error4")
+
+            if (mensaje.value.trim() === "") {
+                bandera=false;
+            
+              mensaje.style.border="2px solid red";
+              mens.style.display="flex";
+              mens.style.color="red";
+              mens.innerHTML="Dejanos tu mensaje";
+            
+       
+       
+            }
+
+        return bandera;
+                     
         }
 
+    
+
         function validarFormatoEmail(email) {
-            const formato = /\S+@\S+\.\S+/;
+            const formato = /^[a-zA-Z0-9._-]+@(gmail|hotmail|yahoo)(\.com|.edu|.ar){1,2}$/;
             return formato.test(email);
 
         }
+   
+
+     function comprobando(campo, x){
+
+
+     if (campo.value.trim()===""){
+     campo.style.border="red 2px solid";
+     let parrafo=document.getElementById(x);
+
+      parrafo.style.display="flex";
+      parrafo.style.color="red";
+      parrafo.innerHTML="Debe completar el campo";
+
+        }   
+
+       }
+
     </script>
 
 

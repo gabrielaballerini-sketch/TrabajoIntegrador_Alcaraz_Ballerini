@@ -126,3 +126,10 @@ button {
     gap: 20px;
     justify-content: center;
 }
+
+
+#error, #error2, #error3, #error4  {
+    display: none;
+}
+ 
+ 
