@@ -51,32 +51,78 @@
         <div class="barilo">
 
             <h3> Viajar en auto </h3>
-            <a href="Bariloche3.html">
-                <img src="Fotos_integrador/viajar-en-auto-a-bariloche.webp" alt="">
-            </a>
+            <img src="Fotos_integrador/viajar-en-auto-a-bariloche.webp" alt="" onclick="mostrarTexto('auto')"
+                class="foto-interactiva">
+            <div id="auto" class="oculto">
+                <p> Manejar en la Patagonia siempre es una verdadera aventura, rutas poco transitadas, largas rectas y
+                    hermosos y
+                    desolados paisajes.</p>
 
+                <p>En el camino se encuentran diferentes pueblos y
+                    ciudades
+                    que ofrecen los diferentes servicios como estaciones de servicios, hoteles, restaurantes y
+                    comedores,
+                    gomerías y talleres mecánicos. A medida que uno se adentra a la Patagonia (en La Pampa) los pueblos
+                    con
+                    servicios están cada vez más espaciados.</p>
+
+            </div>
         </div>
 
         <div class="barilo">
 
             <h3>Viajar en micro</h3>
-            <a href="Bariloche4.html">
-                <img src="Fotos_integrador/viajar-micro-bariloche.webp" alt="">
-            </a>
+            <img src="Fotos_integrador/viajar-micro-bariloche.webp" alt="" onclick="mostrarTexto('micro')"
+                class="foto-interactiva">
+            <div id="micro" class="oculto">
+                <p>Diariamente diferentes empresas de micros realizan viajes a Bariloche.
+
+                    Los micros que viajan a Bariloche son modernos, seguros y confortables. Existen muchas empresas que
+                    ofrecen
+                    diferentes servicios desde económico hasta algunos que incluyen cena, bebidas, wifi, etc.</p>
+                <p> El viaje en micro a Bariloche lleva más de 20 horas. Puede ser una buena opción viajar durante la
+                    mayor
+                    parte de la noche. Viajar en micro también permite conocer diferentes paisajes del sur del país.</p>
+
+
+            </div>
+
         </div>
 
         <div class="barilo">
 
             <h3>Vuelos</h3>
-            <a href="Bariloche5.html">
-                <img src="Fotos_integrador/viajar-en-auto-a-bariloche.webp" alt="">
-            </a>
+            <img src="Fotos_integrador/vuelos-a-bariloche.webp" alt="" onclick="mostrarTexto('vuelo')"
+                class="foto-interactiva">
+            <div id="vuelo" class="oculto">
+                <p>Volar es la forma más rápida y cómoda de viajar a Bariloche.
+                </p>
+
+                <p>Algunas empresas que viajan</p>
+                <ol>
+                    <li>Aerolíneas Argentina: aerolineas.com.ar</li>
+                    <li>Latam: latamairlines.com</li>
+                    <li>FlyBondi: flybondi.com</li>
+                    <li>JetSmart: jetsmart.com</li>
+                </ol>
+                <p> En temporada de vacaciones de invierno hay vuelos directos desde Brasil(Sao Paulo).
+
+                    También se puede volar desde Chile, con las empresas Latam y Sky </p>
+            </div>
+
         </div>
 
     </div>
 
 
+    <script>
 
+        function mostrarTexto(idParrafo) {
+            const parrafo = document.getElementById(idParrafo);
+            parrafo.classList.toggle('visible')
+
+        }
+    </script>
 
 </body>
 

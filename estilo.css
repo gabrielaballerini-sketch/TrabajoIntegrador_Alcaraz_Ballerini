@@ -9,6 +9,7 @@
 }
 
 h1 {
+
   font-size: 26px;
   font-weight: bold;
   color: rgb(136, 191, 136);
@@ -17,6 +18,7 @@ h1 {
 }
 
 .historia1 {
+
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -27,11 +29,14 @@ h1 {
 }
 
 .histTxt h2 {
+
   text-align: left;
   text-decoration: underline double;
+
 }
 
 .histImg {
+
   display: flex;
   flex-direction: column;
   width: 35%;
@@ -41,39 +46,49 @@ h1 {
   align-items: normal;
   border: solid 2px white;
   overflow: hidden;
+
 }
 
 .histTxt {
+
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 20px;
+
 }
 
 
 .mision {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: stretch;
   padding: 20px;
   flex-wrap: wrap;
+
 }
 
 .misionTxt {
+
   flex: 1;
   justify-content: start;
   align-items: start;
   padding: 20px;
+
 }
 
 .misionTxt h2 {
+
   text-decoration: underline double;
+
 }
 
 .imgMision {
+
   display: flex;
   flex-direction: column;
   width: 55%;
@@ -83,17 +98,22 @@ h1 {
   align-items: normal;
   border: solid 2px white;
   overflow: hidden;
+
 }
 
 #navbar {
+
   padding: 10 px;
   position: sticky;
   top: 0;
   height: 50px;
   margin-bottom: 20px;
+  z-index: 1000;
+
 }
 
 ul {
+
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -110,60 +130,76 @@ li {
 
 li a,
 .despBtn {
+
   display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+
 }
 
 li a:hover,
 .desplegable:hover .despBtn {
+
   background-color: #468875;
+
 }
 
 li.desplegable {
+
   display: inline-block;
   background-color: #468875;
+
 }
 
 .despContenido {
+
   display: none;
   position: absolute;
   background-color: #468875;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 200;
+
 }
 
 .despContenido a {
+
   color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
+
 }
 
 .despContenido a:hover {
+
   background-color: #73bfa9;
+
 }
 
 .desplegable:hover .despContenido {
+
   display: block;
+
 }
 
 li a {
+
   background-color: #468875;
+
 }
 
 h1 {
 
   text-align: center;
 
-
 }
 
 .barilo_texto {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -203,6 +239,7 @@ h1 {
 
 
 .barilo {
+
   width: 30%;
   display: inline-block;
   vertical-align: top;
@@ -219,6 +256,7 @@ h1 {
 }
 
 .contenedorLocalidades {
+
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -274,6 +312,7 @@ h1 {
 }
 
 .textobarilo2 li {
+
   margin-bottom: 5px;
 
 }
@@ -282,38 +321,33 @@ h1 {
 
 
 .imgLocalidades {
+
   display: flex;
   flex-direction: column;
   width: 50%;
-
   border-radius: 20px;
   justify-content: center;
   align-items: center
 }
 
-
-
-
-
 .imgLocalidades img {
-  /* CAMBIO CLAVE: Aquí es donde reduces el tamaño de la imagen real */
+
   width: 78%;
-  /* Por ejemplo, la imagen ocupará el 80% del 45% del contenedor */
   height: auto;
-  /* Mantiene la proporción */
   display: block;
-  /* Es una buena práctica para imágenes */
   max-width: 100%;
-  /* Asegura que nunca se desborde del contenedor (.imgLocalidades) */
+
 }
 
 .txtLocalidades {
+
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   padding: 20px;
+
 }
 
 .contenido-desplegable {
@@ -322,4 +356,89 @@ h1 {
   padding: 10px;
   border: 1px solid #ccc;
 
+}
+
+/* estilo de cruce de los andes*/
+h2 {
+  text-align: center;
+}
+
+#contenedorImagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin: auto;
+
+}
+
+.cont-img1 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+
+
+}
+
+.cont-img2 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+}
+
+.cruce {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+  height: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: normal;
+  border: solid 2px white;
+  overflow: hidden;
+  margin: auto;
+}
+
+.img-andes {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: normal;
+  border: solid 2px white;
+  overflow: hidden;
+  margin: auto;
+}
+
+
+ol li {
+  list-style-type: square;
+  background-color: white;
+}
+
+/* estilos de bariloche2*/
+.oculto {
+  display: none;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Estado Activo: Visible cuando la función JS añade la clase 'visible' */
+.oculto.visible {
+  display: block;
+}
+
+/* (cursor para indicar que es clickeable) */
+.foto-interactiva {
+  cursor: pointer;
 }
