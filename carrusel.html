@@ -114,7 +114,7 @@
       <li><a href="carrusel.html">Inicio</a></li>
       <li><a href="index.html">Nosotros</a></li>
       <li class="desplegable">
-        <a href="javascript:void(0)" class="despBtn">Experiencias</a>
+        <a href="" class="despBtn">Experiencias</a>
         <div class="despContenido">
           <a href="Bariloche.html">Bariloche</a>
           <a href="Costa.html">Costa Atlantica</a>
@@ -132,6 +132,8 @@
 
 
     <div class="diapositiva ">
+
+
 
       <img src="Fotos_integrador/bariloInicio.jpg" class="img-carrusel">
       <div class="text">Bariloche </div>
@@ -158,18 +160,13 @@
 
 
 
-    <a class="anterior" onclick="avanzar(-1)">&#10094;</a>
-    <a class="next" onclick="avanzar(1)">&#10095;</a>
+    <a class="anterior" onclick="avanzar(-1)"></a>
+    <a class="next" onclick="avanzar(1)"></a>
   </div>
-  <br>
+  
 
 
-  <div style="text-align:center">
-    <span class="punto" onclick="imagenActual(1)"></span>
-    <span class="punto" onclick="imagenActual(2)"></span>
-    <span class="punto" onclick="imagenActual(3)"></span>
-    <span class="punto" onclick="imagenActual(4)"></span>
-  </div>
+
 
   <script>
 
@@ -189,17 +186,15 @@
     function mostrarDiapositivas(n) {
       let i;
       let diapositivas = document.getElementsByClassName("diapositiva");
-      let puntos = document.getElementsByClassName("punto");
+     
       if (n > diapositivas.length) { index = 1 }
       if (n < 1) { index = diapositivas.length }
       for (i = 0; i < diapositivas.length; i++) {
         diapositivas[i].style.display = "none";
       }
-      for (i = 0; i < puntos.length; i++) {
-        puntos[i].className = puntos[i].className.replace(" seleccionado", "");
-      }
+      
       diapositivas[index - 1].style.display = "block";
-      puntos[index - 1].className += " seleccionado";
+    
     }
 
 
