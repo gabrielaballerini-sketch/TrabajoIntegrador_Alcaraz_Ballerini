@@ -1,89 +1,91 @@
 * {
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
 
-    color: rgb(136, 191, 136);
-    font-style: italic;
+  color: rgb(136, 191, 136);
+  font-style: italic;
 
 }
 
 div h2 {
-    text-align: center;
+  text-align: center;
 }
 
 #navbar {
-    padding: 10 px;
-    position: sticky;
-    top: 0;
-    height: 50px;
-    margin-bottom: 20px;
+  padding: 10 px;
+  position: sticky;
+  top: 0;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #468875;
-    display: flex;
-    /*AGREGUE FLEX ACA */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #468875;
+  display: flex;
+  /*AGREGUE FLEX ACA */
 }
 
 li {
-    /* BORRO   float: left;*/
-    background-color: #468875;
+  /* BORRO   float: left;*/
+  background-color: #468875;
 }
 
 li a,
 .despBtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover,
 .desplegable:hover .despBtn {
-    background-color: #468875;
+  background-color: #468875;
 }
 
 li.desplegable {
-    display: inline-block;
-    background-color: #468875;
+  display: inline-block;
+  background-color: #468875;
 }
 
 .despContenido {
-    display: none;
-    position: absolute;
-    background-color: #468875;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 200;
+  display: none;
+  position: absolute;
+  background-color: #468875;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 200;
 }
 
 .despContenido a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
 .despContenido a:hover {
-    background-color: #73bfa9;
+  background-color: #73bfa9;
 }
 
 .desplegable:hover .despContenido {
-    display: block;
+  display: block;
 }
 
 li a {
-    background-color: #468875;
+  background-color: #468875;
 }
 
-
+h1 {
+  text-align: center;
+}
 
 .barilo_texto {
 
@@ -108,7 +110,7 @@ li a {
   text-align: center;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
 }
 
@@ -128,9 +130,11 @@ li a {
 .barilo {
 
   width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
 
 }
 
@@ -206,4 +210,8 @@ li a {
 ol li {
   list-style-type: square;
   background-color: white;
+}
+
+h3 {
+  text-align: center;
 }

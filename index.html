@@ -13,14 +13,13 @@
 <body>
     <div id="navbar">
         <ul>
-            <li><a href="carrusel.html">Inicio</a></li>
             <li><a href="index.html">Nosotros</a></li>
             <li class="desplegable">
                 <a href="javascript:void(0)" class="despBtn">Experiencias</a>
                 <div class="despContenido">
                     <a href="Bariloche/Bariloche.html">Bariloche</a>
-                    <a href="Costa.html">Costa Atlantica</a>
-                    <a href="cruceAndes.html">Cruce de los Andes</a>
+                    <a href="Costa/Costa.html">Costa Atlantica</a>
+                    <a href="CruceDeLosAndes/cruceAndes.html">Cruce de los Andes</a>
                     <a href="escaladaMendoza/escaladaMendoza.html">Escalada en Mendoza</a>
                     <a href="LasLeñas/lasLenas.html">Las Leñas</a>
                 </div>
@@ -30,8 +29,16 @@
 
     </div>
 
+    <div class="carrusel2">
 
-    <h1>Nuestra historia</h1>
+        <img id="fotos" src=" " alt="calesita1">
+        <a class="anterior" onclick="avanzar(-1)">&#10094;</a>
+        <a class="next" onclick="avanzar(1)">&#10095;</a>
+
+    </div>
+
+
+
 
     <div class="historia1">
 
@@ -98,7 +105,7 @@
         </div>
         <div class="imgMision"><img src="Fotos_integrador/viajera.jpg" alt="portada2"></div>
     </div>
-
+    <script src="carrusel.js"> </script>
 </body>
 
 </html>

@@ -9,65 +9,63 @@
 
 
   <style>
-   
-body{
+    body {
 
-font-family: Arial, Helvetica, sans-serif;
-background-color: white;
-margin:0;
-padding: 0;
-text-align: center;
-
-
-}
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
 
 
-
-#fotos{
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
-border-radius: 10px;
-
-}
-
-.anterior, .next{
-position: absolute;
-margin-top: -25px;
- top: 50%;
-bottom: 0;
-cursor: pointer;
-height: 40px;
-width: 40px;
-color: white;
-border-radius: 50%;
-}
-
-.anterior{
-left:10px
-
-}
-
-.next{
-
-right: 100px;
-
-}
+    }
 
 
 
-.carrusel2 {
-   display: flex;
-   position:relative;
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-   margin: 50px auto;
+    .carrusel2 #fotos {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
 
-}
+    }
+
+    .anterior,
+    .next {
+      position: absolute;
+      margin-top: -25px;
+      top: 50%;
+      bottom: 0;
+      cursor: pointer;
+      height: 40px;
+      width: 40px;
+      color: white;
+      border-radius: 50%;
+    }
+
+    .anterior {
+      left: 10px
+    }
+
+    .next {
+
+      right: 10px;
+
+    }
 
 
+
+    .carrusel2 {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      width: 60%;
+      margin: 50px auto;
+      overflow: hidden;
+
+    }
   </style>
 
 </head>
@@ -94,52 +92,52 @@ right: 100px;
   </div>
 
 
-  
-
-    <div class="carrusel2">
-
-<img id="fotos" src=" " alt="calesita1">
 
 
-</div>
+  <div class="carrusel2">
 
-<button class="anterior" onclick="avanzar(-1)">Anterior</button>
-<button class="next" onclick="avanzar(1)">Siguiente</button>
+    <img id="fotos" src=" " alt="calesita1">
+    <button class="anterior" onclick="avanzar(-1)"></button>
+    <button class="next" onclick="avanzar(1)"></button>
+
+  </div>
+
+
 
 
 
   <script>
 
-    let imagenes=[
+    let imagenes = [
       "Fotos_integrador/bariloInicio.jpg",
-      "Fotos_integrador/catamarca.jpeg",
+      "Fotos_integrador/verano-en-bariloche.jpg",
       "Fotos_integrador/dique_potrerillos.jpg",
       "Fotos_integrador/lasLeñas.webp"
-   
+
 
     ]
 
 
 
-let index = 0;
+    let index = 0;
 
-mostrarDiapositivas(index);
+    mostrarDiapositivas(index);
 
-// controles ant/next
-function avanzar(n) {
-    mostrarDiapositivas(index += n);
-}
+    // controles ant/next
+    function avanzar(n) {
+      mostrarDiapositivas(index += n);
+    }
 
-function mostrarDiapositivas(n) {
-    
-    if(n>=imagenes.length) index=0;
-    
-    if (n < 1) { index = imagenes.length-1 }
-   
-  var foto=document.getElementById("fotos");
-  foto.src=imagenes[index];
+    function mostrarDiapositivas(n) {
 
-}
+      if (n >= imagenes.length) index = 0;
+
+      if (n < 1) { index = imagenes.length - 1 }
+
+      var foto = document.getElementById("fotos");
+      foto.src = imagenes[index];
+
+    }
 
 
 

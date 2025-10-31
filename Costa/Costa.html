@@ -8,42 +8,13 @@
 
   <link rel="stylesheet" href="costa.css">
 
-
-  <style>
-    button.titulo {
-      width: 100%;
-      background-color: #468875;
-      border: 2px solid #4CAF50;
-      border-radius: 6px;
-      padding: 10px;
-      margin: 6px auto;
-    }
-
-    /* .contenido-desplegable {
-      display: none;
-      /* OCULTO por defecto 
-      padding: 10px;
-      border: 1px solid #ccc;
-
-    }*/
-
-    .contenido-desplegable.activo {
-      display: block;
-      font-size: 16px;
-      /* VISIBLE cuando tiene la clase 'activo' */
-    }
-  </style>
-
-
 </head>
 
 <body>
 
-
   <div id="navbar">
     <ul>
-      <li><a href="carrusel.html">Inicio</a></li>
-      <li><a href="index.html">Nosotros</a></li>
+      <li><a href="../index.html">Nosotros</a></li>
       <li class="desplegable">
         <a href="javascript:void(0)" class="despBtn">Experiencias</a>
         <div class="despContenido">
@@ -54,18 +25,13 @@
           <a href="../LasLeñas/lasLenas.html">Las Leñas</a>
         </div>
       </li>
-      <li><a href="formulario.html">Contacto</a></li>
+      <li><a href="../Formulario/formulario.html">Contacto</a></li>
     </ul>
 
   </div>
 
-
-
-
   <h1>Vivi el verano en la Costa Atlántica</h1>
   <div class="historia1">
-
-
 
     <div class="histTxt">
 
@@ -97,7 +63,7 @@
 
   <div class="contenedorLocalidades">
     <div class="imgLocalidades">
-      <img src="../Fotos_integrador/mapaCosta.jpeg"alt="costa">
+      <img src="../Fotos_integrador/mapaCosta.jpeg" alt="costa">
     </div>
     <div class="txtLocalidades">
       <table>
@@ -185,21 +151,7 @@
     </div>
   </div>
 
-  <script>
-
-    function mostrarOcultar(id) {
-      const contenido = document.getElementById(id);
-      contenido.classList.toggle('activo')
-      if (contenido.classList.contains('activo')) {
-        contenido.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-
-
-  </script>
-
-
-
+  <script src="costa.js"></script>
 
 </body>
 

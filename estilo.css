@@ -198,16 +198,7 @@ h1 {
 
 }
 
-.contenedorLocalidades {
 
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-
-}
 
 
 .imagen-principal img {
@@ -227,107 +218,54 @@ h1 {
 
 
 
-.imgLocalidades {
 
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center
-}
-
-.imgLocalidades img {
-
-  width: 78%;
-  height: auto;
-  display: block;
-  max-width: 100%;
-
-}
-
-.txtLocalidades {
-
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  padding: 20px;
-
-}
-
-.contenido-desplegable {
-  display: none;
-  /* OCULTO por defecto */
-  padding: 10px;
-  border: 1px solid #ccc;
-
-}
 
 /* estilo de cruce de los andes*/
-h2 {
-  text-align: center;
-}
 
-#contenedorImagenes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+
+/* estilo del carrusel*/
+.carrusel2 #fotos {
   width: 100%;
-  margin: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 
 }
 
-.cont-img1 {
+.anterior,
+.next {
+  position: absolute;
+  margin-top: -25px;
+  top: 50%;
+  bottom: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 20%;
+}
 
+.anterior {
+  left: 10px
+}
+
+.next {
+
+  right: 10px;
+
+}
+
+
+
+.carrusel2 {
   display: flex;
-  flex-direction: column;
+  position: relative;
   justify-content: center;
   align-items: center;
-  width: 45%;
-
-
-}
-
-.cont-img2 {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 45%;
-}
-
-.cruce {
-  display: flex;
-  flex-direction: column;
-  width: 68%;
-  height: 100%;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: normal;
-  border: solid 2px white;
-  overflow: hidden;
+  width: 95%;
+  height: 500px;
   margin: auto;
-}
-
-.img-andes {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  height: 100%;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: normal;
-  border: solid 2px white;
   overflow: hidden;
-  margin: auto;
-}
 
-
-ol li {
-  list-style-type: square;
-  background-color: white;
 }

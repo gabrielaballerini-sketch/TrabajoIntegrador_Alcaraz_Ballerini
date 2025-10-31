@@ -31,10 +31,6 @@
 
     </div>
 
-
-
-
-
     <h1>Vamos a Bariloche</h1>
 
     <div class="textobarilo2">
@@ -43,7 +39,7 @@
     </div>
 
     <div class="imagen-principal imagenes_barilo">
-        <img src="Fotos_integrador/como_llegar_bariloche.jpg" alt="" class="barilo2-imag">
+        <img src="../Fotos_integrador/como_llegar_bariloche.jpg" alt="" class="barilo2-imag">
     </div>
 
 
@@ -51,7 +47,7 @@
         <div class="barilo">
 
             <h3> Viajar en auto </h3>
-            <img src="Fotos_integrador/viajar-en-auto-a-bariloche.webp" alt="" onclick="mostrarTexto('auto')"
+            <img src="../Fotos_integrador/viajar-en-auto-a-bariloche.webp" alt="" onclick="mostrarTexto('auto')"
                 class="foto-interactiva">
             <div id="auto" class="oculto">
                 <p> Manejar en la Patagonia siempre es una verdadera aventura, rutas poco transitadas, largas rectas y
@@ -72,7 +68,7 @@
         <div class="barilo">
 
             <h3>Viajar en micro</h3>
-            <img src="Fotos_integrador/viajar-micro-bariloche.webp" alt="" onclick="mostrarTexto('micro')"
+            <img src="../Fotos_integrador/viajar-micro-bariloche.webp" alt="" onclick="mostrarTexto('micro')"
                 class="foto-interactiva">
             <div id="micro" class="oculto">
                 <p>Diariamente diferentes empresas de micros realizan viajes a Bariloche.
@@ -92,7 +88,7 @@
         <div class="barilo">
 
             <h3>Vuelos</h3>
-            <img src="Fotos_integrador/vuelos-a-bariloche.webp" alt="" onclick="mostrarTexto('vuelo')"
+            <img src="../Fotos_integrador/vuelos-a-bariloche.webp" alt="" onclick="mostrarTexto('vuelo')"
                 class="foto-interactiva">
             <div id="vuelo" class="oculto">
                 <p>Volar es la forma más rápida y cómoda de viajar a Bariloche.
@@ -120,6 +116,7 @@
         function mostrarTexto(idParrafo) {
             const parrafo = document.getElementById(idParrafo);
             parrafo.classList.toggle('visible')
+            parrafo.scrollIntoView({ behavior: "smooth", block: "start" });
 
         }
     </script>
