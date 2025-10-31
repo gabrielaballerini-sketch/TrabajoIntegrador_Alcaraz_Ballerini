@@ -18,40 +18,32 @@ margin:0;
 padding: 0;
 text-align: center;
 
-}
-
-.contenedor-carrusel{
-
-position:relative;
-width: 450px;
-height: 300px;
-margin:50px auto;
-overflow: hidden;
-border-radius: 10px;
 
 }
+
 
 
 #fotos{
-width: 60%;
-height: 60%;
+width: 100%;
+height: 100%;
+object-fit: cover;
 display: block;
-
+border-radius: 10px;
 
 }
 
 .anterior, .next{
 position: absolute;
-top: 0;
+margin-top: -25px;
+
+ top: 50%;
 bottom: 0;
-margin: auto 0;
-display: flex;
-justify-content: space-between;
-padding: 0 15 px;
+cursor: pointer;
 height: 40px;
 width: 40px;
 
-
+color: white;
+border-radius: 50%;
 }
 
 .anterior{
@@ -61,10 +53,21 @@ left:10px
 
 .next{
 
-  right: 10px;
+right: 100px;
+
 }
 
 
+
+.carrusel2 {
+   display: flex;
+   position:relative;
+   justify-content: center;
+   align-items: center;
+   width: 60%;
+   margin: 50px auto;
+
+}
 
 
   </style>
@@ -93,12 +96,14 @@ left:10px
   </div>
 
 
-  <div>
+  
+
+    <div class="carrusel2">
 
 <img id="fotos" src=" " alt="calesita1">
+
+
 </div>
-
-
 
 <button class="anterior" onclick="avanzar(-1)">Anterior</button>
 <button class="next" onclick="avanzar(1)">Siguiente</button>
@@ -118,7 +123,7 @@ left:10px
 
 
 
-let index = 1;
+let index = 0;
 
 mostrarDiapositivas(index);
 
@@ -129,12 +134,12 @@ function avanzar(n) {
 
 function mostrarDiapositivas(n) {
     
-
-    if (n > imagenes.length) { index = 1 }
-    if (n < 1) { index = imagenes.length }
+    if(n>=imagenes.length) index=0;
+    
+    if (n < 1) { index = imagenes.length-1 }
    
   var foto=document.getElementById("fotos");
-  foto.src=imagenes[index-1];
+  foto.src=imagenes[index];
 
 }
 
