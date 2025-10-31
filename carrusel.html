@@ -9,100 +9,64 @@
 
 
   <style>
-    * {
-      box-sizing: border-box;
-      background-color: white;
+   
+body{
 
-    }
+font-family: Arial, Helvetica, sans-serif;
+background-color: white;
+margin:0;
+padding: 0;
+text-align: center;
+
+}
+
+.contenedor-carrusel{
+
+position:relative;
+width: 450px;
+height: 300px;
+margin:50px auto;
+overflow: hidden;
+border-radius: 10px;
+
+}
 
 
-    .Carrusel {
-
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-      z-index: 0;
-
-    }
+#fotos{
+width: 60%;
+height: 60%;
+display: block;
 
 
-    .diapositiva {
+}
 
-      display: none;
-      padding-top: 30px;
-      width: 1000px;
-      height: 700px;
-      overflow: hidden;
+.anterior, .next{
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto 0;
+display: flex;
+justify-content: space-between;
+padding: 0 15 px;
+height: 40px;
+width: 40px;
 
-    }
 
-    .img-carrusel {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+}
 
-    /* anterior & next botones */
-    .anterior,
-    .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      margin-top: -22px;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-      border-radius: 0 3px 3px 0;
+.anterior{
+left:10px
 
-    }
+}
 
-    /* posiciona el boton next a la derecha */
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
+.next{
 
-    /* cambia color anterior next, en hover  */
-    .anterior:hover,
-    .next:hover {
-      background-color: #194f40;
+  right: 10px;
+}
 
-    }
 
-    /* texto abajo de las fotos */
-    .text {
-      color: #050505;
-      text-shadow:
-        -1px -1px 0 white,
-        1px -1px 0 white,
-        -1px 1px 0 white,
-        1px 1px 0 white;
 
-      font-size: 16px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 5px;
-      width: 100%;
-      text-align: center;
-    }
 
-    .punto {
-      cursor: pointer;
-      border-radius: 50%;
-      height: 8px;
-      width: 8px;
-      margin: 0 2px;
-      background-color: #bbb;
-      display: inline-block;
-
-    }
-
-    .seleccionado,
-    .punto:hover {
-      background-color: #717171;
-    }
   </style>
 
 </head>
@@ -128,74 +92,57 @@
 
   </div>
 
-  <div class="Carrusel">
 
+  <div>
 
-    <div class="diapositiva ">
-
-
-
-      <img src="Fotos_integrador/bariloInicio.jpg" class="img-carrusel">
-      <div class="text">Bariloche </div>
-    </div>
-
-    <div class="diapositiva ">
-
-      <img src="Fotos_integrador/catamarca.jpeg" class="img-carrusel">
-      <div class="text">Cruce de los Andes</div>
-    </div>
-
-    <div class="diapositiva ">
-
-      <img src="Fotos_integrador/dique_potrerillos.jpg" class="img-carrusel">
-      <div class="text">Dique Potrerillos</div>
-    </div>
-
-    <div class="diapositiva">
-
-      <img src="Fotos_integrador/lasLeñas.webp" class="img-carrusel">
-      <div class="text">Las Leñas</div>
-    </div>
+<img id="fotos" src=" " alt="calesita1">
+</div>
 
 
 
-
-    <a class="anterior" onclick="avanzar(-1)"></a>
-    <a class="next" onclick="avanzar(1)"></a>
-  </div>
-  
-
+<button class="anterior" onclick="avanzar(-1)">Anterior</button>
+<button class="next" onclick="avanzar(1)">Siguiente</button>
 
 
 
   <script>
 
-    let index = 1;
-    mostrarDiapositivas(index);
+    let imagenes=[
+      "Fotos_integrador/bariloInicio.jpg",
+      "Fotos_integrador/catamarca.jpeg",
+      "Fotos_integrador/dique_potrerillos.jpg",
+      "Fotos_integrador/lasLeñas.webp"
+   
 
-    // Next/previous controls
-    function avanzar(n) {
-      mostrarDiapositivas(index += n);
-    }
+    ]
 
-    // Thumbnail image controls
-    function imagenActual(n) {
-      mostrarDiapositivas(index = n);
-    }
 
-    function mostrarDiapositivas(n) {
-      let i;
-      let diapositivas = document.getElementsByClassName("diapositiva");
-     
-      if (n > diapositivas.length) { index = 1 }
-      if (n < 1) { index = diapositivas.length }
-      for (i = 0; i < diapositivas.length; i++) {
-        diapositivas[i].style.display = "none";
-      }
-      
-      diapositivas[index - 1].style.display = "block";
+
+let index = 1;
+
+mostrarDiapositivas(index);
+
+// controles ant/next
+function avanzar(n) {
+    mostrarDiapositivas(index += n);
+}
+
+function mostrarDiapositivas(n) {
     
-    }
+
+    if (n > imagenes.length) { index = 1 }
+    if (n < 1) { index = imagenes.length }
+   
+  var foto=document.getElementById("fotos");
+  foto.src=imagenes[index-1];
+
+}
+
+
+
+
+
+
 
 
 
