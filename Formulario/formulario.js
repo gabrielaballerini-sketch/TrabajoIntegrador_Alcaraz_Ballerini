@@ -117,8 +117,6 @@ function mostrarDatos() {
     const form = document.forms["formu"];
     const nombre = form["nombre"].value;
 
-
-
     let contenedor = document.createElement('div');
     contenedor.classList.add("contenedorDatos")
 
@@ -128,9 +126,9 @@ function mostrarDatos() {
     contenedor.appendChild(parrafo)
     const contenedorFormulario = document.getElementById("contenedorForm")
 
-    const contForm = document.getElementById("contenedorDatos")
-    //contForm.insertAdjacentElement("afterend", contenedor)
-    contForm.append(contenedor);
+   
+    contenedorFormulario.insertAdjacentElement("afterend", contenedor)
+   
     contenedorFormulario.style.display = "none";
 
     contenedor.scrollIntoView({ behavior: "smooth", block: "start" });
