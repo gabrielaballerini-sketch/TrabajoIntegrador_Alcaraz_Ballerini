@@ -196,12 +196,11 @@ h1 {
   background-color: #f9f9f9;
 }
 
-/* Estado Activo: Visible cuando la función JS añade la clase 'visible' */
+
 .oculto.visible {
   display: block;
 }
 
-/* (cursor para indicar que es clickeable) */
 .foto-interactiva {
   cursor: pointer;
 }

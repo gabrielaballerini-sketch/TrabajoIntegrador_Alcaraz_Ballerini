@@ -121,14 +121,14 @@ function mostrarDatos() {
     contenedor.classList.add("contenedorDatos")
 
     let parrafo = document.createElement('p');
-    parrafo.innerHTML = nombre + " tu formulario fue enviado con exito";
+    parrafo.innerHTML = nombre + " tu formulario fue enviado con exito, en breve contestaremos tu consulta";
 
     contenedor.appendChild(parrafo)
     const contenedorFormulario = document.getElementById("contenedorForm")
 
-   
+
     contenedorFormulario.insertAdjacentElement("afterend", contenedor)
-   
+
     contenedorFormulario.style.display = "none";
 
     contenedor.scrollIntoView({ behavior: "smooth", block: "start" });

@@ -83,7 +83,7 @@ li a {
     background-color: #468875;
 }
 
- /* general */
+/* general */
 
 h1 {
 
@@ -92,7 +92,7 @@ h1 {
 
 }
 
-img {
+.skiando {
     display: flex;
     flex-direction: column;
     width: 60%;

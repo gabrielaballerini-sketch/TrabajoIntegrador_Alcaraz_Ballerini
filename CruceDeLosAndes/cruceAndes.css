@@ -167,3 +167,21 @@ ol li {
     list-style-type: square;
     background-color: white;
 }
+
+#oferta {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border: 2px solid #468875;
+}
+
+#oferta button {
+
+    background-color: red;
+    color: white;
+}

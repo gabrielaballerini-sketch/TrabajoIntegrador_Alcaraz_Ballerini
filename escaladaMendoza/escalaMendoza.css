@@ -78,7 +78,7 @@ li a {
     background-color: #468875;
 }
 
-img {
+.escalada {
     display: flex;
     flex-direction: column;
     width: 75%;
