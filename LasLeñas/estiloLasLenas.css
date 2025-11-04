@@ -92,7 +92,7 @@ h1 {
 
 }
 
-.skiando {
+#skiando {
     display: flex;
     flex-direction: column;
     width: 60%;
@@ -122,4 +122,29 @@ ol .listLenas {
 
     list-style-type: square;
     background-color: white;
+}
+
+
+.modonoche .listLenas{
+background-color: #070707;
+transition: all 0.6s ease;
+}
+
+.modonoche {
+background-color: #070707;
+transition: all 0.6s ease;
+}
+
+#noche{
+position: fixed;
+top:15px;
+right: 15px;
+background-color: #fff;
+color:#060606;
+border: none;
+padding: 8px 12px;
+border-radius: 20px;
+cursor: pointer;
+font-size: 14px ;
+
 }
