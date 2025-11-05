@@ -1,12 +1,21 @@
 * {
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-
-    color: rgb(136, 191, 136);
+    /*background-color: rgb(136, 191, 136);*/
+       color: rgb(15, 90, 15);
     font-style: italic;
-
+   
 }
+
+
+body {
+  background: linear-gradient(to bottom, #f2fff8, #d8efe6);
+  color: #2f3e35;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 
 #navbar {
     padding: 10 px;
@@ -78,18 +87,17 @@ li a {
 
 #contenedorForm {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
-    height: 650px;
-    width: 500px;
+   
+    width: 600px;
     border: 2px solid rgb(30, 63, 1);
     border-radius: 20px;
     box-shadow: 10px 15px #468875;
     padding: 5px;
-    max-width: 90%;
-    align-items: stretch;
-    margin-top: 30px;
+    max-width: 100%;
+    margin-top: 15px;
 
 }
 
@@ -110,8 +118,12 @@ input,
 textarea {
     border: none;
     border-bottom: 1px solid rgb(5, 54, 5);
+    background: linear-gradient(to bottom, #f2fff8, #d8efe6);
 
 }
+
+
+
 
 .botones {
     display: flex;

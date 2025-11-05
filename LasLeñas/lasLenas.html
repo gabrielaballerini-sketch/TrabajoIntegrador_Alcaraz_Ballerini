@@ -21,7 +21,7 @@
                 <div class="despContenido">
                     <a href="../Bariloche/Bariloche.html">Bariloche</a>
                     <a href="../Costa/Costa.html">Costa Atlantica</a>
-                    <a href="../CruceDeLosAndes/">Cruce de los Andes</a>
+                    <a href="../CruceDeLosAndes/cruceAndes.html">Cruce de los Andes</a>
                     <a href="../escaladaMendoza/escaladaMendoza.html">Escalada en Mendoza</a>
                     <a href="lasLenas.html">Las Leñas</a>
                 </div>
@@ -93,42 +93,9 @@
 
     <button onclick="modonoche()" id="noche"> Modo Noche</button>
 
-    <script>
+    <script src="lasLenas.js">
 
-
-
-        const imagenNoche = "../Fotos_integrador/lenasnoche.webp";
-        const imagenDia = "../Fotos_integrador/lasLeñas.webp"
-        const imagenDia2 = "../Fotos_integrador/lenas2.jpg";
-        const imagenNoche2 = "../Fotos_integrador/verticalNoche.jpg";
-
-        function modonoche() {
-
-
-
-
-            let body = document.body;
-
-            let imagen = document.getElementById("skiando");
-            let img = document.getElementById("sky")
-
-            body.classList.toggle("modonoche");
-
-
-            if (body.classList.contains("modonoche")) {
-                imagen.src = imagenNoche;
-                img.src = imagenNoche2;
-
-
-            } else {
-                imagen.src = imagenDia;
-                img.src = imagenDia2
-
-
-            }
-
-
-        }
+      
 
     </script>
 

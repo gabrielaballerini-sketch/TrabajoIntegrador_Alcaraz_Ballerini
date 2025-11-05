@@ -3,7 +3,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
 
-    color: rgb(136, 191, 136);
+      color: rgb(15, 90, 15);
     font-style: italic;
 
 }
@@ -11,6 +11,18 @@
 div h2 {
     text-align: center;
 }
+
+
+body {
+  background: linear-gradient(to bottom, #f2fff8, #d8efe6);
+  color: #124024;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 #navbar {
     padding: 10 px;
@@ -113,6 +125,7 @@ h1 {
     /* OCULTO por defecto */
     padding: 10px;
     border: 1px solid #ccc;
+  
 
 }
 
@@ -124,6 +137,7 @@ h1 {
 
 .contenido-desplegable p {
     font-size: 16px;
+
 }
 
 button.titulo {
