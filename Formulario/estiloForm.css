@@ -9,7 +9,7 @@
 
 
 body {
-  background: linear-gradient(to bottom, #f2fff8, #d8efe6);
+  background: #d8efe6;
   color: #2f3e35;
   line-height: 1.6;
   margin: 0;
@@ -166,3 +166,6 @@ h2 {
     margin-top: 20px;
 
 }
+
+
+

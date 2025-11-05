@@ -38,11 +38,11 @@ ul {
   overflow: hidden;
   background-color: #468875;
   display: flex;
-  /*AGREGUE FLEX ACA */
+
 }
 
 li {
-  /* BORRO   float: left;*/
+
   background-color: #468875;
 }
 
@@ -107,7 +107,7 @@ h1 {
   text-align: justify;
   padding: 30 px;
 
-  /*agregue*/
+ 
   font-size: 25px;
 
 }

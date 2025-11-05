@@ -104,6 +104,10 @@ li a {
 
 h2 {
     text-align: center;
+    color: #2a6a52;
+    font-size: 32px;
+    margin: 20px 0;
+    
 }
 
 .Carrusel {
@@ -158,6 +162,22 @@ h2 {
 }
 
 ol li {
-    background-color: white;
+    background-color: #e8f5ee;
+    color: #0f5a0f ;
     list-style-type: square;
+    background: f9f9f9;
+    border-left: 4px solid #468875;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.mendozaTexto{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px;
+width: 75%;
+margin: auto;
+
 }
