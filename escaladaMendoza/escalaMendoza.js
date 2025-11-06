@@ -1,5 +1,3 @@
-
-
 let index = 1;
 mostrarDiapositivas(index);
 

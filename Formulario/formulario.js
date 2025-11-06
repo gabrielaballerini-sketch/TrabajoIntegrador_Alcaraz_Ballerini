@@ -16,8 +16,6 @@ function validarForm() {
     correo.style.border = "";
     mensaje.style.border = "";
 
-
-
     if (nombre.value === "") {
         comprobando(nombre, "error");
         bandera = false;
@@ -25,15 +23,12 @@ function validarForm() {
         let variable = document.getElementById("error").style.display = 'none';
     }
 
-
-
     if (apellido.value === '') {
         comprobando(apellido, "error2");
         bandera = false;
     } else {
         let variable = document.getElementById("error2").style.display = 'none';
     }
-
 
 
     let valor = document.getElementById("error3");
@@ -46,8 +41,6 @@ function validarForm() {
         valor.style.color = "red";
         valor.innerHTML = "Debe completar el campo"
         correo.style.border = "1px solid red";
-
-
 
     } else if (!validarFormatoEmail(correo.value)) {
 
@@ -74,14 +67,11 @@ function validarForm() {
         mens.style.color = "red";
         mens.innerHTML = "Dejanos tu mensaje";
 
-
-
     }
 
     if (bandera == true) {
         mostrarDatos();
     }
-
 
     return false;
 
@@ -98,7 +88,6 @@ function validarFormatoEmail(email) {
 
 function comprobando(campo, x) {
 
-
     if (campo.value.trim() === "") {
         campo.style.border = "red 1px solid";
         let parrafo = document.getElementById(x);
@@ -113,7 +102,6 @@ function comprobando(campo, x) {
 
 function mostrarDatos() {
 
-
     const form = document.forms["formu"];
     const nombre = form["nombre"].value;
 
@@ -126,7 +114,6 @@ function mostrarDatos() {
     contenedor.appendChild(parrafo)
     const contenedorFormulario = document.getElementById("contenedorForm")
 
-
     contenedorFormulario.insertAdjacentElement("afterend", contenedor)
 
     contenedorFormulario.style.display = "none";
@@ -134,6 +121,5 @@ function mostrarDatos() {
     contenedor.scrollIntoView({ behavior: "smooth", block: "start" });
 
     return false;
-
 
 }

@@ -2,7 +2,6 @@
 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
-
   color: rgb(15, 90, 15);
   font-style: italic;
 
@@ -16,7 +15,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 
 
 div h2 {
@@ -96,6 +94,7 @@ li a {
 
 h1 {
   text-align: center;
+  font-size: 28px;
 }
 
 .barilo_texto {
@@ -106,8 +105,6 @@ h1 {
   align-items: center;
   text-align: justify;
   padding: 30 px;
-
- 
   font-size: 25px;
 
 }
@@ -197,14 +194,12 @@ h1 {
 
 }
 
-
-
 /* estilos de bariloche2*/
 .oculto {
   display: none;
   padding: 10px;
   border-top: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: #e8f5ee;
 }
 
 
@@ -219,9 +214,19 @@ h1 {
 
 ol li {
   list-style-type: square;
-  background-color: white;
+  background-color: #e8f5ee;
 }
 
 h3 {
   text-align: center;
+}
+
+footer div {
+  padding: 25px;
+}
+
+span {
+  font-style: italic;
+  font-weight: bold;
+  padding: 25px;
 }

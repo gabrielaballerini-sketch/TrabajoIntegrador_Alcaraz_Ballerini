@@ -3,11 +3,7 @@ let imagenes = [
     "Fotos_integrador/verano-en-bariloche.jpg",
     "Fotos_integrador/dique_potrerillos.jpg",
     "Fotos_integrador/lasLeñas.webp"
-
-
 ]
-
-
 
 let index = 0;
 

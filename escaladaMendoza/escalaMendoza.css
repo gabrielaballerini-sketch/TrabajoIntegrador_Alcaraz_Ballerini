@@ -1,18 +1,18 @@
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
-    /*background-color: rgb(136, 191, 136);*/
-       color: rgb(15, 90, 15);
+
+    color: rgb(15, 90, 15);
     font-style: italic;
 }
 
 
 body {
-  background: linear-gradient(to bottom, #f2fff8, #d8efe6);
-  color: #2f3e35;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    background: linear-gradient(to bottom, #f2fff8, #d8efe6);
+    color: #2f3e35;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
 }
 
 
@@ -33,11 +33,11 @@ ul {
     overflow: hidden;
     background-color: #468875;
     display: flex;
-    /*AGREGUE FLEX ACA */
+
 }
 
 li {
-    /* BORRO   float: left;*/
+
     background-color: #468875;
 }
 
@@ -107,7 +107,7 @@ h2 {
     color: #2a6a52;
     font-size: 32px;
     margin: 20px 0;
-    
+
 }
 
 .Carrusel {
@@ -148,13 +148,11 @@ h2 {
 
 }
 
-/* posiciona el boton next a la derecha */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* cambia color anterior next, en hover  */
 .anterior:hover,
 .next:hover {
     background-color: #194f40;
@@ -163,21 +161,25 @@ h2 {
 
 ol li {
     background-color: #e8f5ee;
-    color: #0f5a0f ;
+    color: #0f5a0f;
     list-style-type: square;
-    background: f9f9f9;
-    border-left: 4px solid #468875;
     padding: 10px;
     border-radius: 8px;
     text-align: left;
 }
 
-.mendozaTexto{
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 20px;
-width: 75%;
-margin: auto;
+.mendozaTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
 
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    padding: 25px;
 }
